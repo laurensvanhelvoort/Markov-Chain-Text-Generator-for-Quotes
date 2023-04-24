@@ -7,6 +7,8 @@ num_iterations = 10
 
 def main():
     text_generator = TextGenerator(state_size=state_size)
+
+    # Load Goodreads quotes dataset from Kaggle (https://www.kaggle.com/datasets/abhishekvermasg1/goodreads-quotes)
     text_generator.load_data('data/quotes.csv')
     text_generator.create_word_pairs()
 
